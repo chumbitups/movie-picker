@@ -1,5 +1,5 @@
 from models import Movie
-from picker import pick_random_movie
+from picker import pick_random_movie, pick_random_movies
 
 movie1 = Movie("The Reader", 2008, True)
 movie2 = Movie("Nosferatu", 2024, True)
@@ -10,8 +10,14 @@ movie6 = Movie("Hope", 2026)
 
 movies = [movie1, movie2, movie3, movie4, movie5, movie6]
 selected_movie = pick_random_movie(movies)
+selected_movies = pick_random_movies(movies, 5)
+selected_movies2 = pick_random_movies(movies, 2)
+
+print(selected_movies)
+print(selected_movies2)
 
 if selected_movie is None:
     print("В списке не осталось непросмотренных фильмов")
 else: 
     print(f"{selected_movie.title} ({selected_movie.year})")
+
