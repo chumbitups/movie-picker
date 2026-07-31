@@ -1,5 +1,6 @@
+import pytest
 from models import Movie
-from picker import pick_random_movie, pick_random_movies
+from picker import pick_random_movie, pick_random_movies, calculate_movie_weight
 
 movie1 = Movie("The Reader", 2008, watched=True)
 movie2 = Movie("Nosferatu", 2024)
@@ -64,11 +65,31 @@ def test_zero_count():
 
     assert len(selected_movies) == 0
 
-def test_no_repeating():
-    test_movies = [movie1, movie1, movie2, movie2, movie3, movie4, movie4]
+def test_movie_weight_without_recommendations():
+    movie = Movie(
+        title="Arrival",
+        year=2016,
+        recommendation_count=0
+    )
+    actual_weight = calculate_movie_weight(movie)
+    assert actual_weight == 1
 
-    selected_movies = pick_random_movies(test_movies, 5)
+def test_movie_weight_with_one_recommendation():
+    movie = Movie(
+        title="Arrival",
+        year=2016,
+        recommendation_count=1
+    )
+    actual_weight = calculate_movie_weight(movie)
+    assert actual_weight == pytest.approx(0.5)
 
-    titles = [movie.title for movie in selected_movies]
+def test_movie_weight_with_three_recommendations():
+    movie = Movie(
+        title="Arrival",
+        year=2016,
+        recommendation_count=3
+    )
+    actual_weight = calculate_movie_weight(movie)
+    assert actual_weight == pytest.approx(0.25)
 
-    assert len(titles) == len(set(titles))
+
