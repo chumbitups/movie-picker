@@ -1,6 +1,6 @@
 import pytest
 from models import Movie
-from picker import pick_random_movie, calculate_movie_weight, register_recommendation
+from picker import pick_random_movie, calculate_movie_weight, register_recommendation, mark_movie_as_watched
 
 movie1 = Movie("The Reader", 2008, watched=True)
 movie2 = Movie("Nosferatu", 2024)
@@ -91,4 +91,18 @@ def test_register_unselected_movie():
     assert movie2.recommendation_count == 1
     assert movie3.recommendation_count == 0
 
+def test_movie_become_watched():
+    movie = Movie("The Reader", 2008, watched=False)
+
+    mark_movie_as_watched(movie)
+
+    assert movie.watched == True
+
+    mark_movie_as_watched(movie)
+
+    assert movie.watched == True
+
+    assert movie.title == "The Reader"
+    assert movie.year == 2008
+    assert movie.recommendation_count == 0
 

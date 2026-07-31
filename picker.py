@@ -26,6 +26,9 @@ def calculate_movie_weight(movie: Movie) -> float:
 def register_recommendation(movie: Movie) -> None:
     movie.recommendation_count += 1
 
+def mark_movie_as_watched(movie: Movie):
+    movie.watched = True
+
 
 
 
