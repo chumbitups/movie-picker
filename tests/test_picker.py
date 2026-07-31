@@ -1,6 +1,6 @@
 import pytest
 from models import Movie
-from picker import pick_random_movie, pick_random_movies, calculate_movie_weight, register_recommendations
+from picker import pick_random_movie, calculate_movie_weight, register_recommendation
 
 movie1 = Movie("The Reader", 2008, watched=True)
 movie2 = Movie("Nosferatu", 2024)
@@ -36,34 +36,6 @@ def test_list_is_none():
     selected_movie = pick_random_movie(test_movies)
 
     assert selected_movie is None
-
-def test_6_unwatched():
-    test_movies = [movie2, movie7, movie8, movie9, movie10, movie11]
-
-    selected_movies = pick_random_movies(test_movies, 5)
-
-    assert len(selected_movies) == 5
-
-def test_2_unwatched():
-    test_movies = [movie2, movie7]
-
-    selected_movies = pick_random_movies(test_movies, 2)
-
-    assert len(selected_movies) == 2
-
-def test_empty_list():
-    test_movies = []
-
-    selected_movies = pick_random_movies(test_movies, 5)
-
-    assert len(selected_movies) == 0
-
-def test_zero_count():
-    test_movies = [movie1, movie2, movie3]
-
-    selected_movies = pick_random_movies(test_movies, 0)
-
-    assert len(selected_movies) == 0
 
 def test_movie_weight_without_recommendations():
     movie = Movie(
@@ -105,16 +77,16 @@ def test_registered_counts():
         recommendation_count=3
     )
 
-    register_recommendations([movie1, movie2])
+    register_recommendation(movie1)
+    register_recommendation(movie2)
 
     assert movie1.recommendation_count == 1
     assert movie2.recommendation_count == 4
 
-def test_register_recommendations_empty_list():
-    register_recommendations([])
-
 def test_register_unselected_movie():
-    register_recommendations([movie1, movie2])
+    register_recommendation(movie1)
+    register_recommendation(movie2)
+
     assert movie1.recommendation_count == 1
     assert movie2.recommendation_count == 1
     assert movie3.recommendation_count == 0
