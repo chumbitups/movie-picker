@@ -1,6 +1,6 @@
 import pytest
 from models import Movie
-from picker import pick_random_movie, pick_random_movies, calculate_movie_weight
+from picker import pick_random_movie, pick_random_movies, calculate_movie_weight, register_recommendations
 
 movie1 = Movie("The Reader", 2008, watched=True)
 movie2 = Movie("Nosferatu", 2024)
@@ -91,5 +91,32 @@ def test_movie_weight_with_three_recommendations():
     )
     actual_weight = calculate_movie_weight(movie)
     assert actual_weight == pytest.approx(0.25)
+
+def test_registered_counts():
+    movie1 = Movie(
+        title="Arrival",
+        year=2016,
+        recommendation_count=0
+        )
+
+    movie2 = Movie(
+        title="Departure",
+        year=2015,
+        recommendation_count=3
+    )
+
+    register_recommendations([movie1, movie2])
+
+    assert movie1.recommendation_count == 1
+    assert movie2.recommendation_count == 4
+
+def test_register_recommendations_empty_list():
+    register_recommendations([])
+
+def test_register_unselected_movie():
+    register_recommendations([movie1, movie2])
+    assert movie1.recommendation_count == 1
+    assert movie2.recommendation_count == 1
+    assert movie3.recommendation_count == 0
 
 

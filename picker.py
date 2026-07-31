@@ -32,6 +32,10 @@ def calculate_movie_weight(movie: Movie) -> float:
     weight = 1 / (movie.recommendation_count + 1)
     return weight
 
+def register_recommendations(movies: list[Movie]) -> None:
+    for movie in movies:
+        movie.recommendation_count += 1
+
 
 
 
