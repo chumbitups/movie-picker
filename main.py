@@ -1,23 +1,51 @@
 from models import Movie
-from picker import pick_random_movie, pick_random_movies
+from picker import (
+    pick_random_movie,
+    register_recommendation,
+    mark_movie_as_watched,
+)
 
-movie1 = Movie("The Reader", 2008, True)
-movie2 = Movie("Nosferatu", 2024, True)
-movie3 = Movie("The Witch", 2015)
-movie4 = Movie("Finally Dawn", 2023)
-movie5 = Movie("Everytime", 2026)
-movie6 = Movie("Hope", 2026)
+movie1 = Movie("Arrival", 2019)
+movie2 = Movie("The Avatar", 2008)
+movie3 = Movie("The Odyssey", 2026)
+movies = [movie1, movie2, movie3]
 
-movies = [movie1, movie2, movie3, movie4, movie5, movie6]
-selected_movie = pick_random_movie(movies)
-selected_movies = pick_random_movies(movies, 5)
-selected_movies2 = pick_random_movies(movies, 2)
+def run_app(movies: list[Movie]) -> None:
+    while True:
+        selected_movie = pick_random_movie(movies)
 
-print(selected_movies)
-print(selected_movies2)
+        if selected_movie is None:
+            print("No movies left")
+            break
 
-if selected_movie is None:
-    print("В списке не осталось непросмотренных фильмов")
-else: 
-    print(f"{selected_movie.title} ({selected_movie.year})")
+        register_recommendation(selected_movie)
 
+        print()
+        print(f"Your next movie is: {selected_movie.title} ({selected_movie.year})")
+
+        while True:
+            print("1 - I have watched this movie")
+            print("2 - Recommend another one")
+            print("0 - Exit")
+
+            command = input("Your pick is: ")
+
+            if command == "1":
+                mark_movie_as_watched(selected_movie)
+                print(f"'{selected_movie.title}' marked as watched")
+                break
+
+            elif command == "2":
+                break
+
+            elif command == "0":
+                break
+
+            else:
+                print("Unknown command. Please input 1, 2 or 0")
+
+        if command == "1" or command == "0":
+            break
+
+if __name__ == "__main__":
+    run_app(movies)
