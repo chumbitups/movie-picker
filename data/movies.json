@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Arrival",
+    "year": 2019,
+    "watched": true,
+    "recommendation_count": 2
+  },
+  {
+    "title": "The Avatar",
+    "year": 2008,
+    "watched": false,
+    "recommendation_count": 6
+  },
+  {
+    "title": "The Odyssey",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 3
+  }
+]

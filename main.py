@@ -1,14 +1,20 @@
 from models import Movie
+from storage import save_movies, load_movies
 from picker import (
     pick_random_movie,
     register_recommendation,
     mark_movie_as_watched,
 )
 
-movie1 = Movie("Arrival", 2019)
-movie2 = Movie("The Avatar", 2008)
-movie3 = Movie("The Odyssey", 2026)
-movies = [movie1, movie2, movie3]
+movies = load_movies("data/movies.json")
+
+if not movies:
+    movies = [
+    Movie("Arrival", 2019),
+    Movie("The Avatar", 2008),
+    Movie("The Odyssey", 2026),
+    ]
+
 
 def run_app(movies: list[Movie]) -> None:
     while True:
@@ -19,6 +25,7 @@ def run_app(movies: list[Movie]) -> None:
             break
 
         register_recommendation(selected_movie)
+        save_movies(movies, "data/movies.json")
 
         print()
         print(f"Your next movie is: {selected_movie.title} ({selected_movie.year})")
@@ -33,6 +40,7 @@ def run_app(movies: list[Movie]) -> None:
             if command == "1":
                 mark_movie_as_watched(selected_movie)
                 print(f"'{selected_movie.title}' marked as watched")
+                save_movies(movies, "data/movies.json")
                 break
 
             elif command == "2":
