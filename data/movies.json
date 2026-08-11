@@ -2,19 +2,19 @@
   {
     "title": "Arrival",
     "year": 2019,
-    "watched": true,
-    "recommendation_count": 2
+    "watched": false,
+    "recommendation_count": 0
   },
   {
     "title": "The Avatar",
     "year": 2008,
     "watched": false,
-    "recommendation_count": 6
+    "recommendation_count": 1
   },
   {
     "title": "The Odyssey",
     "year": 2026,
-    "watched": false,
-    "recommendation_count": 3
+    "watched": true,
+    "recommendation_count": 1
   }
 ]

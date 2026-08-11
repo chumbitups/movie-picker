@@ -5,6 +5,11 @@ from picker import (
     register_recommendation,
     mark_movie_as_watched,
 )
+from tmdb_client import (
+    search_movie, 
+    find_movie_match, 
+    get_movie_details
+)
 
 movies = load_movies("data/movies.json")
 
@@ -56,4 +61,14 @@ def run_app(movies: list[Movie]) -> None:
             break
 
 if __name__ == "__main__":
+    details = get_movie_details(329865)
+    
+    print(details.get("title"))
+    print(details.get("runtime"))
+    print(details.get("genres"))
+    print(details.get("production_countries"))
+    
     run_app(movies)
+
+    
+
