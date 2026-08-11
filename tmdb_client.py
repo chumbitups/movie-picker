@@ -78,14 +78,14 @@ def movie_from_tmdb(details: dict) -> Movie:
     )
 
 def fetch_movie(title: str, year: int) -> Movie | None:
-    movie_json = search_movie(title, year)
+    results = search_movie(title, year)
 
-    match = find_movie_match(movie_json, title, year)
+    match = find_movie_match(results, title, year)
 
     if match is None:
         return None
 
-    tmdb_id = match.get("tmdb_id")
+    tmdb_id = match.get("id")
 
     details = get_movie_details(tmdb_id)
 
