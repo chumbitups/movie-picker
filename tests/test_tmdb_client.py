@@ -1,5 +1,5 @@
 import pytest
-from tmdb_client import search_movie, find_movie_match
+from tmdb_client import search_movie, find_movie_match, movie_from_tmdb
 
 results = [
         {
@@ -47,5 +47,28 @@ def test_empty_release_date():
 def test_casefold():
     matched_movie = find_movie_match(results, "arrival", 2016)
     assert matched_movie is not None
+
+def test_movie_from_tmdb():
+    details = {
+        "id": 123,
+        "title": "Test Movie",
+        "release_date": "2020-05-12",
+        "overview": "Description",
+        "runtime": 110,
+        "vote_average": 8.1,
+        "poster_path": "/poster.jpg",
+        "genres": [
+            {"id": 1, "name": "Drama"},
+            {"id": 2, "name": "Thriller"},
+        ],
+        "production_countries": [
+            {"iso_3166_1": "JP", "name": "Japan"}
+        ],
+    }
+
+    test_movie = movie_from_tmdb(details=details)
+    assert test_movie.genres == ["Drama", "Thriller"]
+    assert test_movie.countries == ["Japan"]
+
 
 

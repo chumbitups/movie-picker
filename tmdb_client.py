@@ -1,6 +1,7 @@
 import os
 import httpx
 from dotenv import load_dotenv
+from models import Movie
 
 load_dotenv()
 token = os.getenv("TMDB_TOKEN")
@@ -49,3 +50,33 @@ def get_movie_details(movie_id: int) -> dict:
     response.raise_for_status()
     data = response.json()
     return data
+
+def movie_from_tmdb(details: dict) -> Movie:
+    release_date = details.get("release_date", "")
+
+    if release_date:
+        year = int(release_date[:4])
+    else: 
+        year = 0
+
+    genres = [
+        genre.get("name")
+        for genre in details.get("genres", [])
+    ]
+
+    countries = [
+        country.get("name")
+        for country in details.get("production_countries", [])
+    ]
+
+    return Movie(
+        title=details.get("title"),
+        year=year,
+        tmdb_id=details.get("id"),
+        description=details.get("overview"),
+        runtime=details.get("runtime"),
+        rating=details.get("vote_average"),
+        poster_path=details.get("poster_path"),
+        genres=genres,
+        countries=countries,
+    )
