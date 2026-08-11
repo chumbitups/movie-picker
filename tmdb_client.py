@@ -8,21 +8,24 @@ token = os.getenv("TMDB_TOKEN")
 if token is None:
     raise RuntimeError("TMDB_TOKEN is not set")
 
-def search_movie(title: str, year: int):
-    url = "https://api.themoviedb.org/3/search/movie"
-
+def _get(endpoint: str, params:dict | None = None) -> dict:
     headers = {
         "Authorization": f"Bearer {token}" 
     }
+
+    response = httpx.get(endpoint, params, headers=headers)
+    response.raise_for_status()
+    return response.json()
+
+def search_movie(title: str, year: int):
+    url = "https://api.themoviedb.org/3/search/movie"
 
     params = {
         "query": title,
         "primary_release_year": year,
     }
-    response = httpx.get(url, headers=headers, params=params)
-    response.raise_for_status()
-    data = response.json()
-    return data["results"]
+    
+    return _get(url, params=params)["results"]
 
 def find_movie_match(results: list, title: str, year: int):
     for movie in results:
@@ -42,14 +45,7 @@ def find_movie_match(results: list, title: str, year: int):
 def get_movie_details(movie_id: int) -> dict:
     url = f"https://api.themoviedb.org/3/movie/{movie_id}"
 
-    headers = {
-        "Authorization": f"Bearer {token}" 
-    }
-
-    response = httpx.get(url, headers=headers)
-    response.raise_for_status()
-    data = response.json()
-    return data
+    return _get(url)
 
 def movie_from_tmdb(details: dict) -> Movie:
     release_date = details.get("release_date", "")
@@ -80,3 +76,18 @@ def movie_from_tmdb(details: dict) -> Movie:
         genres=genres,
         countries=countries,
     )
+
+def fetch_movie(title: str, year: int) -> Movie | None:
+    movie_json = search_movie(title, year)
+
+    match = find_movie_match(movie_json, title, year)
+
+    if match is None:
+        return None
+
+    tmdb_id = match.get("tmdb_id")
+
+    details = get_movie_details(tmdb_id)
+
+    return movie_from_tmdb(details=details)
+
