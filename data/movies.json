@@ -3,18 +3,39 @@
     "title": "Arrival",
     "year": 2019,
     "watched": false,
-    "recommendation_count": 0
+    "recommendation_count": 3,
+    "tmdb_id": null,
+    "description": "",
+    "runtime": null,
+    "rating": null,
+    "poster_path": null,
+    "genres": [],
+    "countries": []
   },
   {
     "title": "The Avatar",
     "year": 2008,
     "watched": false,
-    "recommendation_count": 1
+    "recommendation_count": 1,
+    "tmdb_id": null,
+    "description": "",
+    "runtime": null,
+    "rating": null,
+    "poster_path": null,
+    "genres": [],
+    "countries": []
   },
   {
     "title": "The Odyssey",
     "year": 2026,
     "watched": true,
-    "recommendation_count": 1
+    "recommendation_count": 1,
+    "tmdb_id": null,
+    "description": "",
+    "runtime": null,
+    "rating": null,
+    "poster_path": null,
+    "genres": [],
+    "countries": []
   }
 ]

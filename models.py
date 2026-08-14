@@ -13,3 +13,9 @@ class Movie:
     poster_path: str | None = None
     genres: list[str] = field(default_factory=list)
     countries: list[str] = field(default_factory=list)
+
+@dataclass
+class WatchlistItem:
+    title: str
+    year: int
+    slug: str

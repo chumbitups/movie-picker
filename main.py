@@ -11,6 +11,7 @@ from tmdb_client import (
     get_movie_details,
     movie_from_tmdb
 )
+from letterboxd_client import fetch_watchlist_page, parse_watchlist
 
 movies = load_movies("data/movies.json")
 
@@ -61,7 +62,6 @@ def run_app(movies: list[Movie]) -> None:
         if command == "1" or command == "0":
             break
 
-if __name__ == "__main__":
     run_app(movies)
 
     
