@@ -73,51 +73,111 @@ def test_movie_from_tmdb():
     assert test_movie.countries == ["Japan"]
 
 def test_fetch_movie(monkeypatch):
-    def fake_search_movie(title, year):
-        return [
-            {
+    def fake_search_movie(title, year=None):
+        if title == "Arrival" and year == 2016:
+            return [
+                {
+                    "id": 123,
+                    "title": "Arrival",
+                    "release_date": "2016-11-10",
+                }
+            ]
+
+        if title == "Perfect Blue" and year == 1997:
+            return []
+
+        if title == "Perfect Blue" and year is None:
+            return [
+                {
+                    "id": 456,
+                    "title": "Perfect Blue",
+                    "release_date": "1998-02-28",
+                }
+            ]
+        return []
+
+    def fake_get_movie_details(movie_id):
+        if movie_id == 123:
+            return {
                 "id": 123,
                 "title": "Arrival",
                 "release_date": "2016-11-10",
+                "overview": "Test description",
+                "runtime": 116,
+                "vote_average": 7.6,
+                "poster_path": "/arrival.jpg",
+                "genres": [
+                    {"id": 1, "name": "Drama"},
+                ],
+                "production_countries": [
+                    {
+                        "iso_3166_1": "US",
+                        "name": "United States",
+                    }
+                ],
             }
-        ]
 
-    def fake_get_movie_details(movie_id):
-        return {
-            "id": 123,
-            "title": "Arrival",
-            "release_date": "2016-11-10",
-            "overview": "Test description",
-            "runtime": 116,
-            "vote_average": 7.6,
-            "poster_path": "/poster.jpg",
-            "genres": [
-                {"id": 1, "name": "Drama"}
-            ],
-            "production_countries": [
-                {"iso_3166_1": "US", "name": "United States"}
-            ],
-        }
+        if movie_id == 456:
+            return {
+                "id": 456,
+                "title": "Perfect Blue",
+                "release_date": "1998-02-28",
+                "overview": "Perfect Blue description",
+                "runtime": 81,
+                "vote_average": 8.3,
+                "poster_path": "/perfect-blue.jpg",
+                "genres": [
+                    {"id": 2, "name": "Animation"},
+                ],
+                "production_countries": [
+                    {
+                        "iso_3166_1": "JP",
+                        "name": "Japan",
+                    }
+                ],
+            }
 
     monkeypatch.setattr(
         tmdb_client,
         "search_movie",
-        fake_search_movie
+        fake_search_movie,
     )
 
     monkeypatch.setattr(
         tmdb_client,
         "get_movie_details",
-        fake_get_movie_details
+        fake_get_movie_details,
     )
 
     movie = tmdb_client.fetch_movie("Arrival", 2016)
+    movie2 = tmdb_client.fetch_movie("Perfect Blue", 1997)
 
     assert movie is not None
     assert movie.tmdb_id == 123
     assert movie.title == "Arrival"
     assert movie.year == 2016
 
+    assert movie2 is not None
+    assert movie2.tmdb_id == 456
+    assert movie2.title == "Perfect Blue"
+    assert movie2.year == 1998
 
+def test_find_movie_match_allows_one_year_diff():
+    results = [
+        {
+            "id": 123,
+            "title": "Perfect Blue",
+            "release_date": "1998-02-28",
+        }
+    ]
+
+    match = find_movie_match(
+        results,
+        "Perfect Blue",
+        1997
+    )
+
+    assert match is not None
+    assert match["id"] == 123
 
 

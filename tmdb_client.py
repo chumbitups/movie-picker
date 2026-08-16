@@ -13,21 +13,23 @@ def _get(endpoint: str, params:dict | None = None) -> dict:
         "Authorization": f"Bearer {token}" 
     }
 
-    response = httpx.get(endpoint, params, headers=headers)
+    response = httpx.get(endpoint, params=params, headers=headers)
     response.raise_for_status()
     return response.json()
 
-def search_movie(title: str, year: int):
+def search_movie(title: str, year: int | None = None)   :
     url = "https://api.themoviedb.org/3/search/movie"
 
     params = {
         "query": title,
-        "primary_release_year": year,
     }
+
+    if year is not None:
+        params["primary_release_year"] = year
     
     return _get(url, params=params)["results"]
 
-def find_movie_match(results: list, title: str, year: int):
+def find_movie_match(results: list, title: str, year: int | None = None):
     for movie in results:
         movie_title = movie.get("title")
         release_date = movie.get("release_date")
@@ -37,9 +39,13 @@ def find_movie_match(results: list, title: str, year: int):
 
         release_year = int(release_date[:4])
 
-        if movie_title.casefold() == title.casefold() and release_year == year:
-            return movie    
-        
+
+        if (
+            movie_title.casefold() == title.casefold()
+            and abs(release_year - year) <= 1
+        ):
+            return movie
+
     return None
 
 def get_movie_details(movie_id: int) -> dict:
@@ -81,6 +87,10 @@ def fetch_movie(title: str, year: int) -> Movie | None:
     results = search_movie(title, year)
 
     match = find_movie_match(results, title, year)
+
+    if match is None:
+        results = search_movie(title)
+        match = find_movie_match(results=results, title=title, year=year)
 
     if match is None:
         return None
