@@ -1,5 +1,6 @@
 import os
 import httpx
+import time
 from dotenv import load_dotenv
 from models import Movie
 
@@ -13,9 +14,18 @@ def _get(endpoint: str, params:dict | None = None) -> dict:
         "Authorization": f"Bearer {token}" 
     }
 
-    response = httpx.get(endpoint, params=params, headers=headers)
-    response.raise_for_status()
-    return response.json()
+    for attempt in range(3):
+        try:
+            response = httpx.get(endpoint, params=params, headers=headers, timeout=10.0)
+            response.raise_for_status()
+            return response.json()
+
+        except httpx.ReadError:
+            if attempt == 2:
+                raise
+
+            time.sleep(1)
+
 
 def search_movie(title: str, year: int | None = None)   :
     url = "https://api.themoviedb.org/3/search/movie"
@@ -41,7 +51,7 @@ def find_movie_match(results: list, title: str, year: int | None = None):
 
 
         if (
-            movie_title.casefold() == title.casefold()
+            normalize_title(movie_title) == normalize_title(title) 
             and abs(release_year - year) <= 1
         ):
             return movie
@@ -93,11 +103,21 @@ def fetch_movie(title: str, year: int) -> Movie | None:
         match = find_movie_match(results=results, title=title, year=year)
 
     if match is None:
-        return None
+        return None 
 
     tmdb_id = match.get("id")
 
     details = get_movie_details(tmdb_id)
 
     return movie_from_tmdb(details=details)
+
+def normalize_title(title: str) -> str:
+    normalized = title.casefold()
+
+    normalized = normalized.replace("–", "-")
+    normalized = normalized.replace("—", "-")
+
+    normalized = " ".join(normalized.split())
+
+    return normalized
 

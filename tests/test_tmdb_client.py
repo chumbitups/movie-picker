@@ -1,6 +1,6 @@
 import pytest
 import tmdb_client
-from tmdb_client import find_movie_match, movie_from_tmdb
+from tmdb_client import find_movie_match, movie_from_tmdb, normalize_title
 
 
 results = [
@@ -179,5 +179,14 @@ def test_find_movie_match_allows_one_year_diff():
 
     assert match is not None
     assert match["id"] == 123
+
+def test_normalize_title_dashes():
+    letterboxd_title = "Mission: Impossible – The Final Reckoning"
+    tmdb_title = "Mission: Impossible - The Final Reckoning"
+
+    assert normalize_title(letterboxd_title) == normalize_title(tmdb_title)
+
+def test_normalize_title_case_and_spaces():
+    assert normalize_title("  PERFECT   BLUE ") == "perfect blue"
 
 

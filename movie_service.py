@@ -1,12 +1,15 @@
 from models import WatchlistItem, Movie
 from tmdb_client import fetch_movie, search_movie
+from letterboxd_client import fetch_watchlist
 
 def enrich_watchlist(items: list[WatchlistItem]) -> tuple[list[Movie], list[WatchlistItem]]:
     
     movies = []
     unmatched = []
 
-    for item in items:
+    for index, item in enumerate(items, start=1):
+        print(f"[{index}/{len(items)}] {item.title}")
+
         movie = fetch_movie(item.title, item.year)
 
         if movie is None:
@@ -18,29 +21,14 @@ def enrich_watchlist(items: list[WatchlistItem]) -> tuple[list[Movie], list[Watc
     return movies, unmatched
 
 if __name__ == "__main__":
-    items = [
-        WatchlistItem("Arrival", 2016, "arrival"),
-        WatchlistItem("Perfect Blue", 1997, "perfect-blue"),
-        WatchlistItem(
-            "This Movie Definitely Does Not Exist",
-            1900,
-            "nothing"
-        ),
-    ]
-    movies, unmatched = enrich_watchlist(items=items)
+    items = fetch_watchlist("chumbitups")
+
+    print("Letterboxd:", len(items))
+
+    movies, unmatched = enrich_watchlist(items)
+
+    print("Matched:", len(movies))
+    print("Unmatched:", len(unmatched))
 
     for item in unmatched:
         print(item.title, item.year)
-
-    print("Matched:", len(movies))
-    print("Unmatched", len(unmatched))
-
-    results = search_movie("Perfect Blue", 1997)
-
-    for result in results[:5]:
-        print(
-            result.get("title"),
-            result.get("original_title"),
-            result.get("release_date"),
-            result.get("id")
-        )
