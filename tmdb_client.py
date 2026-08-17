@@ -9,14 +9,17 @@ token = os.getenv("TMDB_TOKEN")
 if token is None:
     raise RuntimeError("TMDB_TOKEN is not set")
 
-def _get(endpoint: str, params:dict | None = None) -> dict:
-    headers = {
+client = httpx.Client(
+        headers = {
         "Authorization": f"Bearer {token}" 
-    }
+        },
+        timeout = 10.0 
+    )
 
+def _get(endpoint: str, params:dict | None = None) -> dict:
     for attempt in range(3):
         try:
-            response = httpx.get(endpoint, params=params, headers=headers, timeout=10.0)
+            response = client.get(endpoint, params=params)
             response.raise_for_status()
             return response.json()
 
