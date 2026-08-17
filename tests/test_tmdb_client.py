@@ -1,5 +1,6 @@
 import pytest
 import tmdb_client
+import httpx
 from tmdb_client import find_movie_match, movie_from_tmdb, normalize_title
 
 
@@ -188,5 +189,69 @@ def test_normalize_title_dashes():
 
 def test_normalize_title_case_and_spaces():
     assert normalize_title("  PERFECT   BLUE ") == "perfect blue"
+
+def test_get_retries_on_read_error(monkeypatch):
+    attempts = 0
+
+    class FakeResponse:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"result": "ok"}
+
+    def fake_get(endpoint, params=None):
+        nonlocal attempts
+
+        attempts += 1
+
+        if attempts < 3:
+            raise httpx.ReadError("Test read error")
+        
+        return FakeResponse()
+
+    monkeypatch.setattr(
+        tmdb_client.client,
+        "get",
+        fake_get
+    )
+
+    monkeypatch.setattr(
+        tmdb_client.time,
+        "sleep",
+        lambda _: None
+    )
+
+    result = tmdb_client._get("https://example.test")
+
+    assert attempts == 3
+    assert result == {"result": "ok"}
+
+def test_get_raises_after_three_read_errors(monkeypatch):
+    attempts = 0
+
+    def fake_get(endpoint, params=None):
+        nonlocal attempts
+        attempts += 1
+
+        raise httpx.ReadError("Test read error")
+
+    monkeypatch.setattr(
+        tmdb_client.client,
+        "get",
+        fake_get
+    )
+
+    monkeypatch.setattr(
+        tmdb_client.time,
+        "sleep",
+        lambda _: None
+    )
+
+    with pytest.raises(httpx.ReadError):
+        tmdb_client._get("https://example.test")
+        
+    assert attempts == 3
+
 
 
