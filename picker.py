@@ -2,7 +2,7 @@ from models import Movie
 import random
 
 def pick_random_movie(movies: list[Movie]) -> Movie | None:
-    unwatched_movies = [movie for movie in movies if not movie.watched]
+    unwatched_movies = [movie for movie in movies if not movie.watched and movie.is_in_watchlist]
 
     if not unwatched_movies:
         return None
@@ -28,6 +28,31 @@ def register_recommendation(movie: Movie) -> None:
 
 def mark_movie_as_watched(movie: Movie):
     movie.watched = True
+
+def print_movie_info(movie: Movie):
+    print(f"{movie.title} ({movie.year})")
+    print()
+
+    if movie.rating is not None:
+        print(f"Rating: {movie.rating:.1f}")
+
+    if movie.runtime is not None:
+        print(f"Runtime: {movie.runtime} Minutes")
+
+    if movie.genres:
+        print(f"Genres: {", ".join(movie.genres)}")
+
+    if movie.countries:
+        print(f"Countries: {", ".join(movie.countries)}")
+
+    if movie.description:
+        print()
+        print(movie.description)
+
+
+    
+
+
 
 
 

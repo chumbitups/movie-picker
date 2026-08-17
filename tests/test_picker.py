@@ -1,7 +1,12 @@
 import pytest
 from models import Movie
-from picker import pick_random_movie, calculate_movie_weight, register_recommendation, mark_movie_as_watched
-
+from picker import (
+    pick_random_movie, 
+    calculate_movie_weight, 
+    register_recommendation, 
+    mark_movie_as_watched,
+    print_movie_info
+)
 movie1 = Movie("The Reader", 2008, watched=True)
 movie2 = Movie("Nosferatu", 2024)
 movie3 = Movie("The Witch", 2015, watched=True)
@@ -106,3 +111,44 @@ def test_movie_become_watched():
     assert movie.year == 2008
     assert movie.recommendation_count == 0
 
+def test_print_movie_info(capsys):
+    movie = Movie(
+        title="Road House",
+        year=2024,
+        rating=6.941,
+        runtime=121,
+        genres=["Action", "Thriller", "Drama"],
+        countries=["United States of America"],
+        description="Test description"
+    )
+
+    print_movie_info(movie)
+
+    output = capsys.readouterr().out
+
+    assert "Road House (2024)" in output
+    assert "Rating: 6.9" in output
+    assert "Runtime: 121" in output
+    assert "Action, Thriller, Drama" in output
+    assert "Test description" in output
+
+def test_print_movie_info_skips_empty_fields(capsys):
+    movie = Movie(
+        title="Road House",
+        year=2024,
+        rating=None,
+        runtime=None,
+        genres=[],
+        countries=[],
+        description=""
+    )
+
+    print_movie_info(movie)
+
+    output = capsys.readouterr().out
+
+    assert "Road House (2024)" in output
+    assert "Rating:" not in output
+    assert "Runtime:" not in output
+    assert "Genres:" not in output
+    assert "Countries:" not in output

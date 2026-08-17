@@ -10,7 +10,9 @@
     "rating": null,
     "poster_path": null,
     "genres": [],
-    "countries": []
+    "countries": [],
+    "letterboxd_slug": null,
+    "is_in_watchlist": false
   },
   {
     "title": "The Avatar",
@@ -23,7 +25,9 @@
     "rating": null,
     "poster_path": null,
     "genres": [],
-    "countries": []
+    "countries": [],
+    "letterboxd_slug": null,
+    "is_in_watchlist": false
   },
   {
     "title": "The Odyssey",
@@ -36,6 +40,2049 @@
     "rating": null,
     "poster_path": null,
     "genres": [],
-    "countries": []
+    "countries": [],
+    "letterboxd_slug": null,
+    "is_in_watchlist": false
+  },
+  {
+    "title": "Little Miss Sunshine",
+    "year": 2006,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 773,
+    "description": "A family loaded with quirky, colorful characters piles into an old van and road trips to California for little Olive to compete in a beauty pageant.",
+    "runtime": 102,
+    "rating": 7.691,
+    "poster_path": "/niNdhTpPHSgw22tK0PLjQMV640v.jpg",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "little-miss-sunshine",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Fantastic Mr. Fox",
+    "year": 2009,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 10315,
+    "description": "The Fantastic Mr. Fox, bored with his current life, plans a heist against the three local farmers. The farmers, tired of sharing their chickens with the sly fox, seek revenge against him and his family.",
+    "runtime": 87,
+    "rating": 7.824,
+    "poster_path": "/euZyZb6iGreujYKrGyZHRddhUYh.jpg",
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "fantastic-mr-fox",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Nirvanna the Band the Show the Movie",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1154538,
+    "description": "When their plan to book a show at the Rivoli goes horribly wrong, Matt and Jay accidentally travel back to the year 2008.",
+    "runtime": 100,
+    "rating": 7.538,
+    "poster_path": "/sm5TGX8WbnCd9Uo26cLyTxVwA1n.jpg",
+    "genres": [
+      "Comedy",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "countries": [
+      "Canada"
+    ],
+    "letterboxd_slug": "nirvanna-the-band-the-show-the-movie",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Spider-Man: Brand New Day",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 1,
+    "tmdb_id": 969681,
+    "description": "Fighting crime full-time as Spider-Man in a world that doesn't remember him—and the pressure of seeing his old friends move on without him—sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves - a powerful villain no one can even see.",
+    "runtime": 145,
+    "rating": 7.876,
+    "poster_path": "/iPOn6DinuVyLY17YM9mKuPofV08.jpg",
+    "genres": [
+      "Science Fiction",
+      "Action",
+      "Adventure"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "spider-man-brand-new-day",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Invite",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 950028,
+    "description": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
+    "runtime": 107,
+    "rating": 7.408,
+    "poster_path": "/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-invite-2026",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Reader",
+    "year": 2008,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 8055,
+    "description": "The story of Michael Berg, a German lawyer who, as a teenager in the late 1950s, had an affair with an older woman, Hanna, who then disappeared only to resurface years later as one of the defendants in a war crimes trial stemming from her actions as a concentration camp guard late in the war. He alone realizes that Hanna is illiterate and may be concealing that fact at the expense of her freedom.",
+    "runtime": 124,
+    "rating": 7.5,
+    "poster_path": "/r0WURbmnhgKeBpHcpDULBgRedQM.jpg",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "Germany",
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-reader",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Nosferatu",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 426063,
+    "description": "A gothic tale of obsession between a haunted young woman and the terrifying vampire infatuated with her, causing untold horror in its wake.",
+    "runtime": 133,
+    "rating": 6.712,
+    "poster_path": "/5qGIxdEO841C0tdY8vOdLoRVrr0.jpg",
+    "genres": [
+      "Horror",
+      "Fantasy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "nosferatu-2024",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Witch",
+    "year": 2015,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 526667,
+    "description": "A summer youth camp by the sea. Tonya, a quiet, reserved, and gullible girl, becomes neighbors with Lyudka, who is vibrant, assertive, and calculating. They both fall in love with the same boy. Suddenly, it turns out that Tonya possesses supernatural abilities she cannot control.",
+    "runtime": 90,
+    "rating": 7.667,
+    "poster_path": "/inBpHrLEgLDEZ6A8ZWkg3WS1XKw.jpg",
+    "genres": [
+      "Drama",
+      "Thriller"
+    ],
+    "countries": [
+      "Russia"
+    ],
+    "letterboxd_slug": "the-witch-2015",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Finally Dawn",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1013869,
+    "description": "A young Roman woman during the 1950s is on the verge of becoming engaged to a man. She goes to Cinecittà to do an audition as an extra and is thrust into this almost infinite night during which she discovers herself.",
+    "runtime": 119,
+    "rating": 6.06,
+    "poster_path": "/kdk0lLZdvtG3QbKYHp1chcIEGEV.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Italy",
+      "United States of America"
+    ],
+    "letterboxd_slug": "finally-dawn",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Everytime",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1655419,
+    "description": "A tragedy brings a mother, daughter, and teenage boy together. Struggling with blame and forgiveness, the unlikely trio take a trip to Tenerife  for a family holiday that never happened. Under the glow of the sun,  past and present quietly start to overlap.",
+    "runtime": 119,
+    "rating": 7.3,
+    "poster_path": "/bOEoQxzC74eGMGbSq6xW7eLZjWn.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Austria",
+      "Germany",
+      "France"
+    ],
+    "letterboxd_slug": "everytime",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Dreamed Adventure",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1013822,
+    "description": "The story of a woman living in the border region between Bulgaria, Greece and Turkey, who agrees to partake in a special deal in order to help a friend. However, this will lead her into a dangerous situation, and she will have to confront her desires",
+    "runtime": 167,
+    "rating": 5.9,
+    "poster_path": "/26MIN6Xz6QInqYzDd17c243Uxne.jpg",
+    "genres": [
+      "Drama",
+      "Adventure",
+      "Thriller",
+      "Crime",
+      "Romance"
+    ],
+    "countries": [
+      "Germany",
+      "France",
+      "Austria",
+      "Bulgaria"
+    ],
+    "letterboxd_slug": "the-dreamed-adventure",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Hope",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1058424,
+    "description": "In the remote South Korean village of Hope Harbor, police chief Bum-seok and officer Sung-ae are called to investigate a mysterious creature wreaking havoc on the community. But all is not as it seems, and perceptions can be misleading. What begins as ignorance plants the seed of disaster, escalating through human conflict into a tragedy of cosmic proportions.",
+    "runtime": 157,
+    "rating": 8.1,
+    "poster_path": "/bcK5naYzzfY0JBCgrPrsrbV6NO1.jpg",
+    "genres": [
+      "Science Fiction",
+      "Mystery",
+      "Action"
+    ],
+    "countries": [
+      "South Korea"
+    ],
+    "letterboxd_slug": "hope-2026",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Fatherland",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1437696,
+    "description": "In 1949, German writer Thomas Mann and his daughter Erika embark on a road trip across a Germany in ruins, from US-dominated Frankfurt to Soviet-controlled Weimar.",
+    "runtime": 82,
+    "rating": 5.9,
+    "poster_path": "/oNejN1l69nBF8LdQwy5FkAQZT44.jpg",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "Poland",
+      "Germany",
+      "France",
+      "Italy"
+    ],
+    "letterboxd_slug": "fatherland-2026",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "A Man of His Time",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1318864,
+    "description": "September 1940. Henri Marre arrives alone in Vichy as the authoritarian regime settles in. Broke, estranged from his family, and carrying copies of his self-published manifesto Notre Salut (Our Salvation), the 49-year-old is determined to secure what he believes is his rightful place in the new administration. In his writing, Henri sets out his patriotic convictions and his engineer’s methodology: efficiency above all. Claiming he wants to help save France after defeat, he does whatever is required to remain useful, serving the machinery of the new order with increasing skill. But he may be pursuing something more urgent: escape from his own ruin",
+    "runtime": 155,
+    "rating": 0.0,
+    "poster_path": "/czoh6LEwj3FFIvkRQmXhEb0v9li.jpg",
+    "genres": [
+      "History",
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "France",
+      "Belgium"
+    ],
+    "letterboxd_slug": "a-man-of-his-time",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Coward",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1437981,
+    "description": "Pierre, a young Belgian soldier, wants to prove himself on the battlefield during the First World War. Behind the frontlines, he meets Francis, who is asked to find a way to boost morale.",
+    "runtime": 120,
+    "rating": 0.0,
+    "poster_path": "/zygWvA3i0ji1tOfjT2va8mRP6rN.jpg",
+    "genres": [
+      "Drama",
+      "Romance",
+      "War"
+    ],
+    "countries": [
+      "Belgium",
+      "France",
+      "Netherlands"
+    ],
+    "letterboxd_slug": "coward-2026",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "La Bola Negra",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1422041,
+    "description": "Set across three timelines — Republican Spain in 1932, the Civil War in 1937, and contemporary Spain in 2017 — the film follows a constellation of interconnected lives centered on three young men, whose emotional and political echoes gradually reveal themselves.",
+    "runtime": 155,
+    "rating": 0.0,
+    "poster_path": "/1RQ59MdEDsd3ArHJsf0luS6R6Dd.jpg",
+    "genres": [
+      "Drama",
+      "War"
+    ],
+    "countries": [
+      "Spain",
+      "France"
+    ],
+    "letterboxd_slug": "la-bola-negra",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Fjord",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1401459,
+    "description": "After the deaths of Mihai's parents, Mihai and Lisbeth Gheorghiu leave everything behind in Romania and move with their children to a remote village in Norway, hoping to rebuild their lives near Lisbeth's family. There, they grow close to their neighbors, the Halbergs, whose warmth offers the promise of a fresh start. But the fragile peace begins to unravel when the Gheorghius' young daughter, Elia, arrives at school covered in bruises.",
+    "runtime": 146,
+    "rating": 8.0,
+    "poster_path": "/9jXtRN8qCcoBjj2GGSJcyHMI8Id.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Romania",
+      "Norway",
+      "France",
+      "Finland",
+      "Denmark",
+      "Sweden",
+      "United States of America"
+    ],
+    "letterboxd_slug": "fjord-2026",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Minotaur",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 848700,
+    "description": "When Gleb, a successful company director, finds himself under siege from mounting corporate pressures, an increasingly unstable world, and the discovery of his wife's affair, the collapse of his carefully ordered life accelerates toward violence.",
+    "runtime": 135,
+    "rating": 0.0,
+    "poster_path": "/wcxM1Pc8StmtMVTlkk1d62x0VPl.jpg",
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller"
+    ],
+    "countries": [
+      "Latvia",
+      "France",
+      "Germany"
+    ],
+    "letterboxd_slug": "minotaur-2026",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "All of a Sudden",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1476614,
+    "description": "Marie-Lou Fontaine, director of a nursing home in the Paris suburbs, defies convention by adopting the 'Humanitude' method despite her team’s resistance. Her encounter with Mari Morisaki, a terminally ill Japanese playwright, transforms her life. Together, they turn the facility into a symbol of resistance and humanity against the system’s limits.",
+    "runtime": 196,
+    "rating": 7.813,
+    "poster_path": "/uJkX6VUQbgoDO2LCt7X6wdAXvZj.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Japan",
+      "France",
+      "Belgium",
+      "Germany"
+    ],
+    "letterboxd_slug": "all-of-a-sudden-2026",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Send Help",
+    "year": 2026,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1198994,
+    "description": "Two colleagues become stranded on a deserted island, the only survivors of a plane crash. On the island, they must overcome past grievances and work together to survive, but ultimately, it's a battle of wills and wits to make it out alive.",
+    "runtime": 113,
+    "rating": 7.044,
+    "poster_path": "/zbJWVHOtj3ljBzWgL1P8pxP03Up.jpg",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Comedy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "send-help",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "28 Weeks Later",
+    "year": 2007,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1562,
+    "description": "Twenty-eight weeks after the spread of a deadly rage virus, the inhabitants of the British Isles have lost their battle against the onslaught, as the virus has killed everyone there. Six months later, a group of Americans dare to set foot on the Isles, convinced the danger has passed. But it soon becomes all too clear that the scourge continues to live, waiting to pounce on its next victims.",
+    "runtime": 99,
+    "rating": 6.594,
+    "poster_path": "/oix0aNv1lvW3nUGspUyvSIBlpbs.jpg",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "countries": [
+      "United Kingdom",
+      "Spain",
+      "United States of America"
+    ],
+    "letterboxd_slug": "28-weeks-later",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "28 Days Later",
+    "year": 2002,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 170,
+    "description": "Twenty-eight days after a killer virus was accidentally unleashed from a British research facility, a small group of London survivors are caught in a desperate struggle to protect themselves from the infected. Carried by animals and humans, the virus turns those it infects into homicidal maniacs -- and it's absolutely impossible to contain.",
+    "runtime": 113,
+    "rating": 7.245,
+    "poster_path": "/sQckQRt17VaWbo39GIu0TMOiszq.jpg",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Science Fiction"
+    ],
+    "countries": [
+      "United Kingdom"
+    ],
+    "letterboxd_slug": "28-days-later",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Eddington",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 648878,
+    "description": "In May of 2020, a standoff between a small-town sheriff and mayor sparks a powder keg as neighbor is pitted against neighbor in Eddington, New Mexico.",
+    "runtime": 148,
+    "rating": 6.466,
+    "poster_path": "/4GIqZUgPZ146BhibsPHMHef2nXX.jpg",
+    "genres": [
+      "Western",
+      "Comedy",
+      "Crime"
+    ],
+    "countries": [
+      "United States of America",
+      "Finland"
+    ],
+    "letterboxd_slug": "eddington",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Havoc",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 668489,
+    "description": "When a drug heist swerves lethally out of control, a jaded cop fights his way through a corrupt city's criminal underworld to save a politician's son.",
+    "runtime": 107,
+    "rating": 6.4,
+    "poster_path": "/r46leE6PSzLR3pnVzaxx5Q30yUF.jpg",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller",
+      "Drama"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "letterboxd_slug": "havoc-2025",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Wolf Man",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 710295,
+    "description": "With his marriage fraying, Blake persuades his wife Charlotte to take a break from the city and visit his remote childhood home in rural Oregon. As they arrive at the farmhouse in the dead of night, they're attacked by an unseen animal and barricade themselves inside the home as the creature prowls the perimeter. But as the night stretches on, Blake begins to behave strangely, transforming into something unrecognizable.",
+    "runtime": 103,
+    "rating": 6.14,
+    "poster_path": "/wpSDzTBfF0Eeo5lzu2w9FTujGqd.jpg",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "wolf-man-2025",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Ballerina",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 541671,
+    "description": "Taking place during the events of John Wick: Chapter 3 – Parabellum, Eve Macarro begins her training in the assassin traditions of the Ruska Roma.",
+    "runtime": 125,
+    "rating": 7.3,
+    "poster_path": "/2VUmvqsHb6cEtdfscEA6fqqVzLg.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "ballerina-2025",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Until Dawn",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1232546,
+    "description": "One year after her sister Melanie mysteriously disappeared, Clover and her friends head into the remote valley where she vanished in search of answers. Exploring an abandoned visitor center, they find themselves stalked by a masked killer and horrifically murdered one by one...only to wake up and find themselves back at the beginning of the same evening.",
+    "runtime": 103,
+    "rating": 6.3,
+    "poster_path": "/bLY5yN4MKVynZ2HMZWElTOGBgBe.jpg",
+    "genres": [
+      "Horror",
+      "Mystery"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "until-dawn-2025",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Death of a Unicorn",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1153714,
+    "description": "A father and daughter accidentally hit and kill a unicorn while en route to a weekend retreat, where his billionaire boss seeks to exploit the creature’s miraculous curative properties.",
+    "runtime": 107,
+    "rating": 6.388,
+    "poster_path": "/xWlF2i51zUq7BUq4iJte1g9NyIM.jpg",
+    "genres": [
+      "Horror",
+      "Fantasy",
+      "Comedy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "death-of-a-unicorn",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Novocaine",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1195506,
+    "description": "When the girl of his dreams is kidnapped, everyman Nate turns his inability to feel pain into an unexpected strength in his fight to get her back.",
+    "runtime": 110,
+    "rating": 6.779,
+    "poster_path": "/xmMHGz9dVRaMY6rRAlEX4W0Wdhm.jpg",
+    "genres": [
+      "Action",
+      "Comedy",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "novocaine-2025",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Warfare",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 1,
+    "tmdb_id": 1241436,
+    "description": "A platoon of Navy SEALs embarks on a dangerous mission in Ramadi, Iraq, with the chaos and brotherhood of war retold through their memories of the event.",
+    "runtime": 95,
+    "rating": 7.07,
+    "poster_path": "/l39TlELomwysfsr37vrvCV6rmaQ.jpg",
+    "genres": [
+      "War",
+      "Action"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "letterboxd_slug": "warfare",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Phoenician Scheme",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 1,
+    "tmdb_id": 1137350,
+    "description": "Wealthy businessman Zsa-zsa Korda appoints his only daughter, a nun, as sole heir to his estate. As Korda embarks on a new enterprise, they soon become the target of scheming tycoons, foreign terrorists, and determined assassins.",
+    "runtime": 102,
+    "rating": 6.511,
+    "poster_path": "/u2jxeYLXTYfu0bqJmnLGIgZswib.jpg",
+    "genres": [
+      "Comedy",
+      "Adventure",
+      "Crime"
+    ],
+    "countries": [
+      "United States of America",
+      "Germany"
+    ],
+    "letterboxd_slug": "the-phoenician-scheme",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Mission: Impossible - The Final Reckoning",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 575265,
+    "description": "Ethan Hunt and team continue their search for the terrifying AI known as the Entity — which has infiltrated intelligence networks all over the globe — with the world's governments and a mysterious ghost from Hunt's past on their trail. Joined by new allies and armed with the means to shut the Entity down for good, Hunt is in a race against time to prevent the world as we know it from changing forever.",
+    "runtime": 170,
+    "rating": 7.175,
+    "poster_path": "/iKPsC9EFUafRP9SrUznI61getVP.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Adventure"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "mission-impossible-the-final-reckoning",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Companion",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1084199,
+    "description": "During a weekend getaway at a secluded lakeside estate, a group of friends finds themselves entangled in a web of secrets, deception, and advanced technology. As tensions rise and loyalties are tested, they uncover unsettling truths about themselves and the world around them.",
+    "runtime": 97,
+    "rating": 7.005,
+    "poster_path": "/oCoTgC3UyWGfyQ9thE10ulWR7bn.jpg",
+    "genres": [
+      "Horror",
+      "Science Fiction",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "companion-2025",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Mickey 17",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 696506,
+    "description": "Unlikely hero Mickey Barnes finds himself in the extraordinary circumstance of working for an employer who demands the ultimate commitment to the job… to die, for a living.",
+    "runtime": 137,
+    "rating": 6.836,
+    "poster_path": "/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg",
+    "genres": [
+      "Science Fiction",
+      "Comedy",
+      "Adventure"
+    ],
+    "countries": [
+      "United States of America",
+      "United Kingdom"
+    ],
+    "letterboxd_slug": "mickey-17",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Sinners",
+    "year": 2025,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1233413,
+    "description": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+    "runtime": 138,
+    "rating": 7.503,
+    "poster_path": "/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+    "genres": [
+      "Horror",
+      "Action",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "sinners-2025",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Life Is Beautiful",
+    "year": 1997,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 637,
+    "description": "A touching story of an Italian book seller of Jewish ancestry who lives in his own little fairy tale. His creative and happy life would come to an abrupt halt when his entire family is deported to a concentration camp during World War II. While locked up he tries to convince his son that the whole thing is just a game.",
+    "runtime": 116,
+    "rating": 8.439,
+    "poster_path": "/74hLDKjD5aGYOotO6esUVaeISa2.jpg",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "Italy"
+    ],
+    "letterboxd_slug": "life-is-beautiful",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Amélie",
+    "year": 2001,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 194,
+    "description": "At a tiny Parisian café, the adorable yet painfully shy Amélie accidentally discovers a gift for helping others. Soon Amelie is spending her days as a matchmaker, guardian angel, and all-around do-gooder. But when she bumps into a handsome stranger, will she find the courage to become the star of her very own love story?",
+    "runtime": 122,
+    "rating": 7.9,
+    "poster_path": "/nSxDa3M9aMvGVLoItzWTepQ5h5d.jpg",
+    "genres": [
+      "Comedy",
+      "Romance"
+    ],
+    "countries": [
+      "France",
+      "Germany"
+    ],
+    "letterboxd_slug": "amelie",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "La Haine",
+    "year": 1995,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 406,
+    "description": "After a chaotic night of rioting in a marginal suburb of Paris, three young friends, Vinz, Hubert and Saïd, wander around unoccupied waiting for news about the state of health of a mutual friend who has been seriously injured when confronting the police.",
+    "runtime": 98,
+    "rating": 8.08,
+    "poster_path": "/hY4exng4s29RzDbtQInjx9MA3PZ.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "France"
+    ],
+    "letterboxd_slug": "la-haine",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Charade",
+    "year": 1963,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 4808,
+    "description": "After Regina Lampert falls for the dashing Peter Joshua on a skiing holiday in the French Alps, she discovers upon her return to Paris that her husband has been murdered. Soon, she and Peter are giving chase to three of her late husband's World War II cronies, Tex, Scobie and Gideon, who are after a quarter of a million dollars the quartet stole while behind enemy lines.",
+    "runtime": 113,
+    "rating": 7.657,
+    "poster_path": "/qqaPjC5FQidtKY65jbAKZPiOTaS.jpg",
+    "genres": [
+      "Comedy",
+      "Mystery",
+      "Romance"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "letterboxd_slug": "charade",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Groundhog Day",
+    "year": 1993,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 137,
+    "description": "A cynical TV weatherman, along with his idealistic producer and his sardonic cameraman, is sent to report on Groundhog Day in the small town of Punxsutawney, where he finds himself repeating the same day over and over.",
+    "runtime": 101,
+    "rating": 7.635,
+    "poster_path": "/gCgt1WARPZaXnq523ySQEUKinCs.jpg",
+    "genres": [
+      "Romance",
+      "Fantasy",
+      "Comedy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "groundhog-day",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Millennium Actress",
+    "year": 2002,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 33320,
+    "description": "Documentary filmmaker Genya Tachibana has tracked down the legendary actress Chiyoko Fujiwara, who mysteriously vanished at the height of her career. When he presents her with a key she had lost and thought was gone forever, the filmmaker could not have imagined that it would not only unlock the long-held secrets of Chiyoko’s life... but also his own.",
+    "runtime": 87,
+    "rating": 7.856,
+    "poster_path": "/p44UXOFBCY5xbpCKEsWpi4filCD.jpg",
+    "genres": [
+      "Animation",
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "letterboxd_slug": "millennium-actress",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Seven Samurai",
+    "year": 1954,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 346,
+    "description": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food.",
+    "runtime": 207,
+    "rating": 8.451,
+    "poster_path": "/lOMGc8bnSwQhS4XyE1S99uH8NXf.jpg",
+    "genres": [
+      "Action",
+      "Drama"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "letterboxd_slug": "seven-samurai",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "E.T. the Extra-Terrestrial",
+    "year": 1982,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 601,
+    "description": "An alien is left behind on Earth and saved by the 10-year-old Elliott who decides to keep him hidden in his home. While a task force hunts for the extra-terrestrial, Elliott, his brother, and his little sister Gertie form an emotional bond with their new friend, and try to help him find his way home.",
+    "runtime": 115,
+    "rating": 7.519,
+    "poster_path": "/an0nD6uq6byfxXCfk6lQBzdL2J1.jpg",
+    "genres": [
+      "Adventure",
+      "Science Fiction",
+      "Family"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "et-the-extra-terrestrial",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Sandlot",
+    "year": 1993,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 11528,
+    "description": "During a summer of friendship and adventure, one boy becomes a part of the gang, nine boys become a team and their leader becomes a legend by confronting the terrifying mystery beyond the right field wall.",
+    "runtime": 101,
+    "rating": 7.6,
+    "poster_path": "/7PYqz0viEuW8qTvuGinUMjDWMnj.jpg",
+    "genres": [
+      "Family",
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-sandlot",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Stand by Me",
+    "year": 1986,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 235,
+    "description": "After learning that a boy their age has been accidentally killed near their rural homes, four boys decide to go see the body. Gordie, Vern, Chris, and Teddy encounter a mean junk man and a marsh full of leeches, but they also learn more about one another and their very different home lives. Just a lark at first, the boys' adventure evolves into a defining event in their lives.",
+    "runtime": 89,
+    "rating": 7.833,
+    "poster_path": "/vz0w9BSehcqjDcJOjRaCk7fgJe7.jpg",
+    "genres": [
+      "Drama",
+      "Adventure"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "stand-by-me",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Before Sunrise",
+    "year": 1995,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 76,
+    "description": "An unexpected meeting on a train leads two travelers to spend an evening wandering through Vienna. As the night unfolds, they share stories and conversations about life and love, exploring new ideas while a quiet intimacy grows between them, knowing it may be their only night together.",
+    "runtime": 101,
+    "rating": 7.967,
+    "poster_path": "/kf1Jb1c2JAOqjuzA3H4oDM263uB.jpg",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "Austria",
+      "United States of America"
+    ],
+    "letterboxd_slug": "before-sunrise",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Matrix",
+    "year": 1999,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 603,
+    "description": "Set in the 22nd century, The Matrix tells the story of a computer hacker who joins a group of underground insurgents fighting the vast and powerful computers who now rule the earth.",
+    "runtime": 136,
+    "rating": 8.255,
+    "poster_path": "/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg",
+    "genres": [
+      "Action",
+      "Science Fiction"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-matrix",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Godfather",
+    "year": 1972,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 238,
+    "description": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+    "runtime": 175,
+    "rating": 8.686,
+    "poster_path": "/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-godfather",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "City Lights",
+    "year": 1931,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 901,
+    "description": "A tramp falls in love with a beautiful blind flower girl. His on-and-off friendship with a wealthy man allows him to be the girl's benefactor and suitor.",
+    "runtime": 87,
+    "rating": 8.253,
+    "poster_path": "/ugmakEL5y294I5bXgiBqApuZpwc.jpg",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "city-lights",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Akira",
+    "year": 1988,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 149,
+    "description": "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath that only two teenagers and a group of psychics can stop.",
+    "runtime": 124,
+    "rating": 7.9,
+    "poster_path": "/neZ0ykEsPqxamsX6o5QNUFILQrz.jpg",
+    "genres": [
+      "Animation",
+      "Science Fiction",
+      "Action"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "letterboxd_slug": "akira",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "American History X",
+    "year": 1998,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 73,
+    "description": "Derek Vineyard is paroled after serving 3 years in prison for killing two African-American men. Through his brother, Danny Vineyard's narration, we learn that before going to prison, Derek was a skinhead and the leader of a violent white supremacist gang that committed acts of racial crime throughout L.A. and his actions greatly influenced Danny. Reformed and fresh out of prison, Derek severs contact with the gang and becomes determined to keep Danny from going down the same violent path as he did.",
+    "runtime": 119,
+    "rating": 8.326,
+    "poster_path": "/x2drgoXYZ8484lqyDj7L1CEVR4T.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "american-history-x",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Truman Show",
+    "year": 1998,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 37165,
+    "description": "In a picture-perfect seaside town, an insurance salesman begins to realize that his entire existence may be staged and observed by a vast unseen audience as part of a long-running real-time reality TV show.",
+    "runtime": 103,
+    "rating": 8.156,
+    "poster_path": "/vuza0WqY239yBXOadKlGwJsZJFE.jpg",
+    "genres": [
+      "Comedy",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-truman-show",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Amadeus",
+    "year": 1984,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 279,
+    "description": "Disciplined Italian composer Antonio Salieri becomes consumed by jealousy and resentment towards the hedonistic and remarkably talented young Salzburger composer Wolfgang Amadeus Mozart.",
+    "runtime": 160,
+    "rating": 8.025,
+    "poster_path": "/gQRfiyfGvr1az0quaYyMram3Aqt.jpg",
+    "genres": [
+      "Drama",
+      "History",
+      "Music"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "amadeus",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Thing",
+    "year": 1982,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1091,
+    "description": "A research team in Antarctica is hunted by a shape-shifting alien that assumes the appearance of its victims.",
+    "runtime": 109,
+    "rating": 8.073,
+    "poster_path": "/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",
+    "genres": [
+      "Horror",
+      "Mystery",
+      "Science Fiction"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-thing",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Memento",
+    "year": 2000,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 77,
+    "description": "Leonard Shelby is tracking down the man who raped and murdered his wife. The difficulty of locating his wife's killer, however, is compounded by the fact that he suffers from a rare, untreatable form of short-term memory loss. Although he can recall details of life before his accident, Leonard cannot remember what happened fifteen minutes ago, where he's going, or why.",
+    "runtime": 113,
+    "rating": 8.174,
+    "poster_path": "/nzlv62aC0octS5AklAiWpXLX9Z0.jpg",
+    "genres": [
+      "Mystery",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "memento",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "There Will Be Blood",
+    "year": 2007,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 7345,
+    "description": "Ruthless silver miner, turned oil prospector, Daniel Plainview, moves to oil-rich California. Using his son to project a trustworthy, family-man image, Plainview cons local landowners into selling him their valuable properties for a pittance. However, local preacher Eli Sunday suspects Plainview's motives and intentions, starting a slow-burning feud that threatens both their lives.",
+    "runtime": 158,
+    "rating": 8.064,
+    "poster_path": "/fa0RDkAlCec0STeMNAhPaF89q6U.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "there-will-be-blood",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "It's a Wonderful Life",
+    "year": 1946,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1585,
+    "description": "George Bailey has spent his entire life giving to the people of Bedford Falls.  All that prevents rich skinflint Mr. Potter from taking over the entire town is George's modest building and loan company.  But on Christmas Eve the business's $8,000 is lost and George's troubles begin.",
+    "runtime": 131,
+    "rating": 8.275,
+    "poster_path": "/bSqt9rhDZx1Q7UZ86dBPKdNomp2.jpg",
+    "genres": [
+      "Drama",
+      "Family",
+      "Fantasy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "its-a-wonderful-life",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Clue",
+    "year": 1985,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 15196,
+    "description": "Clue finds six colorful dinner guests gathered at the mansion of their host, Mr. Boddy -- who turns up dead after his secret is exposed: He was blackmailing all of them. With the killer among them, the guests and Boddy's chatty butler must suss out the culprit before the body count rises.",
+    "runtime": 94,
+    "rating": 7.204,
+    "poster_path": "/aRxbYOYHS8T73nzR8hsLousoplR.jpg",
+    "genres": [
+      "Comedy",
+      "Thriller",
+      "Crime",
+      "Mystery"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "clue",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Godfather Part II",
+    "year": 1974,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 240,
+    "description": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
+    "runtime": 202,
+    "rating": 8.572,
+    "poster_path": "/sSuQTCZwqKrNBNIsksO9IAUoWP9.jpg",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-godfather-part-ii",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Requiem for a Dream",
+    "year": 2000,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 641,
+    "description": "The drug-induced utopias of four Coney Island residents are shattered when their addictions run deep.",
+    "runtime": 102,
+    "rating": 8.009,
+    "poster_path": "/9BTwsLaMVHOGFlmsSlx5QYCaXb.jpg",
+    "genres": [
+      "Crime",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "requiem-for-a-dream",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Casablanca",
+    "year": 1943,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 289,
+    "description": "In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications.",
+    "runtime": 102,
+    "rating": 8.138,
+    "poster_path": "/lGCEKlJo2CnWydQj7aamY7s1S7Q.jpg",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "casablanca",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Elephant Man",
+    "year": 1980,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1955,
+    "description": "A Victorian surgeon rescues a heavily disfigured man being mistreated by his \"owner\" as a side-show freak. Behind his monstrous façade, there is revealed a person of great intelligence and sensitivity. Based on the true story of Joseph Merrick (called John Merrick in the film), a severely deformed man in 19th century London.",
+    "runtime": 124,
+    "rating": 8.1,
+    "poster_path": "/u0wpPYjuSt8DIe1Y3Vapnh8jcKE.jpg",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-elephant-man",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "City of God",
+    "year": 2002,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 598,
+    "description": "In the poverty-stricken favelas of Rio de Janeiro in the 1970s, two young men choose different paths. Rocket is a budding photographer who documents the increasing drug-related violence of his neighborhood, while José “Zé” Pequeno is an ambitious drug dealer diving into a dangerous life of crime.",
+    "runtime": 129,
+    "rating": 8.4,
+    "poster_path": "/k7eYdWvhYQyRQoU2TB2A2Xu2TfD.jpg",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "countries": [
+      "Brazil",
+      "France",
+      "Germany"
+    ],
+    "letterboxd_slug": "city-of-god",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Wizard of Oz",
+    "year": 1939,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 630,
+    "description": "Young Dorothy finds herself in a magical world where she makes friends with a lion, a scarecrow and a tin man as they make their way along the yellow brick road to talk with the Wizard and ask for the things they miss most in their lives. The Wicked Witch of the West is the only thing that could stop them.",
+    "runtime": 102,
+    "rating": 7.582,
+    "poster_path": "/uCC3j4pV9eOZwzDUWp2ilbcTf1f.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Family"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-wizard-of-oz-1939",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Harakiri",
+    "year": 1962,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 14537,
+    "description": "Down-on-his-luck veteran Tsugumo Hanshirō enters the courtyard of the prosperous House of Iyi. Unemployed, and with no family, he hopes to find a place to commit seppuku—and a worthy second to deliver the coup de grâce in his suicide ritual. The senior counselor for the Iyi clan questions the ronin’s resolve and integrity, suspecting Hanshirō of seeking charity rather than an honorable end. What follows is a pair of interlocking stories which lay bare the difference between honor and respect, and promises to examine the legendary foundations of the Samurai code.",
+    "runtime": 135,
+    "rating": 8.5,
+    "poster_path": "/zK7HsOC7QxW1ldKIeFG8YJ5F2Eb.jpg",
+    "genres": [
+      "Action",
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "letterboxd_slug": "harakiri",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Children of Men",
+    "year": 2006,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 9693,
+    "description": "In 2027, in a chaotic world in which humans can no longer procreate, a former activist agrees to help transport a miraculously pregnant woman to a sanctuary at sea, where her child's birth may help scientists save the future of humankind.",
+    "runtime": 109,
+    "rating": 7.614,
+    "poster_path": "/k9IAS4TehZFcKi4HVByxZNPfqex.jpg",
+    "genres": [
+      "Science Fiction",
+      "Thriller",
+      "Action"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "letterboxd_slug": "children-of-men",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Heat",
+    "year": 1995,
+    "watched": false,
+    "recommendation_count": 1,
+    "tmdb_id": 949,
+    "description": "Obsessive master thief Neil McCauley leads a top-notch crew on various daring heists throughout Los Angeles while determined detective Vincent Hanna pursues him without rest. Each man recognizes and respects the ability and the dedication of the other even though they are aware their cat-and-mouse game may end in violence.",
+    "runtime": 170,
+    "rating": 7.942,
+    "poster_path": "/umSVjVdbVwtx5ryCA2QXL44Durm.jpg",
+    "genres": [
+      "Crime",
+      "Drama",
+      "Action"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "heat-1995",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Do the Right Thing",
+    "year": 1989,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 925,
+    "description": "Sal is the Italian owner of a pizzeria in Brooklyn. A neighborhood local, Buggin' Out, becomes upset when he sees that the pizzeria's Wall of Fame exhibits only Italian actors. Buggin' Out believes a pizzeria in a black neighborhood should showcase black actors, but Sal disagrees. The wall becomes a symbol of racism and hate to Buggin' Out and to other people in the neighborhood, and tensions rise.",
+    "runtime": 120,
+    "rating": 7.765,
+    "poster_path": "/63rmSDPahrH7C1gEFYzRuIBAN9W.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "do-the-right-thing",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Apartment",
+    "year": 1960,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 284,
+    "description": "Bud Baxter is a minor clerk in a huge New York insurance company, until he discovers a quick way to climb the corporate ladder. He lends out his apartment to the executives as a place to take their mistresses. Although he often has to deal with the aftermath of their visits, one night he's left with a major problem to solve.",
+    "runtime": 126,
+    "rating": 8.185,
+    "poster_path": "/hhSRt1KKfRT0yEhEtRW3qp31JFU.jpg",
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-apartment",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Ikiru",
+    "year": 1952,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 3782,
+    "description": "Kanji Watanabe is a middle-aged man who has worked in the same monotonous bureaucratic position for decades. Learning he has cancer, he starts to look for the meaning of his life.",
+    "runtime": 143,
+    "rating": 8.305,
+    "poster_path": "/dgNTS4EQDDVfkzJI5msKuHu2Ei3.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "letterboxd_slug": "ikiru",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "High and Low",
+    "year": 1963,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 12493,
+    "description": "A Yokohama shoe executive faces a wrenching choice when kidnappers mistakenly seize his chauffeur’s son but demand the ransom anyway.",
+    "runtime": 142,
+    "rating": 8.373,
+    "poster_path": "/tgNjemQPG96uIezpiUiXFcer5ga.jpg",
+    "genres": [
+      "Drama",
+      "Crime",
+      "Thriller",
+      "Mystery"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "letterboxd_slug": "high-and-low",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "12 Angry Men",
+    "year": 1957,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 389,
+    "description": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
+    "runtime": 97,
+    "rating": 8.6,
+    "poster_path": "/ppd84D2i9W8jXmsyInGyihiSyqz.jpg",
+    "genres": [
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "12-angry-men",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "year": 1994,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 278,
+    "description": "Imprisoned in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+    "runtime": 142,
+    "rating": 8.728,
+    "poster_path": "/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+    "genres": [
+      "Drama",
+      "Crime"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-shawshank-redemption",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Princess Bride",
+    "year": 1987,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 2493,
+    "description": "In this enchantingly cracked fairy tale, the beautiful Princess Buttercup and the dashing Westley must overcome staggering odds to find happiness amid six-fingered swordsmen, murderous princes, Sicilians and rodents of unusual size. But even death can't stop these true lovebirds from triumphing.",
+    "runtime": 99,
+    "rating": 7.705,
+    "poster_path": "/2FC9L9MrjBoGHYjYZjdWQdopVYb.jpg",
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Romance",
+      "Family"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-princess-bride",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Come and See",
+    "year": 1985,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 25237,
+    "description": "The invasion of a village in Belarus by German forces sends young Florya into the forest to join the weary Resistance fighters, against his family's wishes. There he meets a girl, Glasha, who accompanies him back to his village. On returning home, Florya finds his family and fellow peasants massacred. His continued survival amidst the brutal debris of war becomes increasingly nightmarish, a battle between despair and hope.",
+    "runtime": 142,
+    "rating": 8.196,
+    "poster_path": "/qNbMsKVzigERgJUbwf8pKyZogpb.jpg",
+    "genres": [
+      "Drama",
+      "War",
+      "Horror",
+      "History"
+    ],
+    "countries": [
+      "Soviet Union"
+    ],
+    "letterboxd_slug": "come-and-see",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Virgin Suicides",
+    "year": 2000,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1443,
+    "description": "A group of male friends become obsessed with five mysterious sisters who are sheltered by their strict, religious parents.",
+    "runtime": 97,
+    "rating": 7.1,
+    "poster_path": "/1NCQtXPQnaHRjOZVmktA9BSM35F.jpg",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-virgin-suicides",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Lawrence of Arabia",
+    "year": 1962,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 947,
+    "description": "During World War I, English officer Thomas Edward 'T.E.' Lawrence sets out to unite and lead the diverse, often warring, Arab tribes to fight the Turks.",
+    "runtime": 228,
+    "rating": 8.001,
+    "poster_path": "/AiAm0EtDvyGqNpVoieRw4u65vD1.jpg",
+    "genres": [
+      "Adventure",
+      "History",
+      "War"
+    ],
+    "countries": [
+      "United Kingdom"
+    ],
+    "letterboxd_slug": "lawrence-of-arabia",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Schindler's List",
+    "year": 1993,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 424,
+    "description": "The true story of how businessman Oskar Schindler saved over a thousand Jewish lives from the Nazis while they worked as slaves in his factory during World War II.",
+    "runtime": 195,
+    "rating": 8.57,
+    "poster_path": "/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+    "genres": [
+      "Drama",
+      "History",
+      "War"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "schindlers-list",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Psycho",
+    "year": 1960,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 539,
+    "description": "When larcenous real estate clerk Marion Crane goes on the lam with a wad of cash and hopes of starting a new life, she ends up at the notorious Bates Motel, where manager Norman Bates cares for his housebound mother.",
+    "runtime": 109,
+    "rating": 8.409,
+    "poster_path": "/yz4QVqPx3h1hD1DfqqQkCq3rmxW.jpg",
+    "genres": [
+      "Horror",
+      "Thriller",
+      "Mystery"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "psycho",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "2001: A Space Odyssey",
+    "year": 1968,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 62,
+    "description": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
+    "runtime": 149,
+    "rating": 8.047,
+    "poster_path": "/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+    "genres": [
+      "Science Fiction",
+      "Mystery",
+      "Adventure"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "letterboxd_slug": "2001-a-space-odyssey",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Wolfs",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 877817,
+    "description": "Hired to cover up a high-profile crime, a fixer soon finds his night spiralling out of control when he's forced to work with an unexpected counterpart.",
+    "runtime": 108,
+    "rating": 6.539,
+    "poster_path": "/vOX1Zng472PC2KnS0B9nRfM8aaZ.jpg",
+    "genres": [
+      "Crime",
+      "Comedy"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "wolfs",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The Beekeeper",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 866398,
+    "description": "One man's campaign for vengeance takes on national stakes after he is revealed to be a former operative of a powerful and clandestine organization known as Beekeepers.",
+    "runtime": 106,
+    "rating": 7.279,
+    "poster_path": "/A7EByudX0eOzlkQ2FIbogzyazm2.jpg",
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
+    ],
+    "countries": [
+      "United Kingdom",
+      "United States of America"
+    ],
+    "letterboxd_slug": "the-beekeeper-2024",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Look Back",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1244492,
+    "description": "Popular, outgoing Fujino is celebrated by her classmates for her funny comics in the class newspaper. One day, her teacher asks her to share the space with Kyomoto, a truant recluse whose beautiful artwork sparks a competitive fervor in Fujino. What starts as jealousy transforms when Fujino realizes their shared passion for drawing.",
+    "runtime": 58,
+    "rating": 8.199,
+    "poster_path": "/4f2EcNkp1Mvp9wE5w7HKxcmACWg.jpg",
+    "genres": [
+      "Animation",
+      "Drama"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "letterboxd_slug": "look-back-2024",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "I'm Still Here",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1000837,
+    "description": "A woman married to a former politician during the 1971 military dictatorship in Brazil is forced to reinvent herself and chart a new course for her family after a violent and arbitrary act.",
+    "runtime": 138,
+    "rating": 7.901,
+    "poster_path": "/gZnsMbhCvhzAQlKaVpeFRHYjGyb.jpg",
+    "genres": [
+      "Drama",
+      "History"
+    ],
+    "countries": [
+      "Brazil",
+      "France"
+    ],
+    "letterboxd_slug": "im-still-here-2024",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Road House",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 1,
+    "tmdb_id": 359410,
+    "description": "Ex-UFC fighter Dalton takes a job as a bouncer at a Florida Keys roadhouse, only to discover that this paradise is not all it seems.",
+    "runtime": 121,
+    "rating": 6.941,
+    "poster_path": "/fDEdtS4P0gJsxHDIt8dG8TR5dx1.jpg",
+    "genres": [
+      "Action",
+      "Thriller",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "road-house-2024",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Speak No Evil",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1114513,
+    "description": "When an American family is invited to spend the weekend at the idyllic country estate of a charming British family they befriended on vacation, what begins as a dream holiday soon warps into a snarled psychological nightmare.",
+    "runtime": 110,
+    "rating": 7.105,
+    "poster_path": "/dA4N6uWOnEMgbxXwFX7qX7adzs8.jpg",
+    "genres": [
+      "Horror",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "speak-no-evil-2024",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Kingdom of the Planet of the Apes",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 653346,
+    "description": "Several generations following Caesar's reign, apes – now the dominant species – live harmoniously while humans have been reduced to living in the shadows. As a new tyrannical ape leader builds his empire, one young ape undertakes a harrowing journey that will cause him to question all he's known about the past and to make choices that will define a future for apes and humans alike.",
+    "runtime": 145,
+    "rating": 7.056,
+    "poster_path": "/gKkl37BQuKTanygYQG1pyYgLVgf.jpg",
+    "genres": [
+      "Science Fiction",
+      "Adventure",
+      "Action"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "kingdom-of-the-planet-of-the-apes",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Monkey Man",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 560016,
+    "description": "Kid is an anonymous young man who ekes out a meager living in an underground fight club where, night after night, wearing a gorilla mask, he is beaten bloody by more popular fighters for cash. After years of suppressed rage, Kid discovers a way to infiltrate the enclave of the city’s sinister elite. As his childhood trauma boils over, his mysteriously scarred hands unleash an explosive campaign of retribution to settle the score with the men who took everything from him.",
+    "runtime": 122,
+    "rating": 6.85,
+    "poster_path": "/4lhR4L2vzzjl68P1zJyCH755Oz4.jpg",
+    "genres": [
+      "Thriller",
+      "Crime",
+      "Action"
+    ],
+    "countries": [
+      "Canada",
+      "Singapore",
+      "United States of America"
+    ],
+    "letterboxd_slug": "monkey-man",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Twisters",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 718821,
+    "description": "As storm season intensifies, the paths of former storm chaser Kate Carter and reckless social-media superstar Tyler Owens collide when terrifying phenomena never seen before are unleashed. The pair and their competing teams find themselves squarely in the paths of multiple storm systems converging over central Oklahoma in the fight of their lives.",
+    "runtime": 123,
+    "rating": 6.763,
+    "poster_path": "/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg",
+    "genres": [
+      "Action",
+      "Thriller"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "twisters",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Furiosa: A Mad Max Saga",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 786892,
+    "description": "As the world falls, young Furiosa is snatched from the Green Place of Many Mothers into the hands of a great biker horde led by the warlord Dementus. Sweeping through the wasteland, they encounter the citadel presided over by Immortan Joe. The two tyrants wage war for dominance, and Furiosa must survive many trials as she puts together the means to find her way home.",
+    "runtime": 149,
+    "rating": 7.442,
+    "poster_path": "/iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
+    "genres": [
+      "Action",
+      "Science Fiction",
+      "Adventure"
+    ],
+    "countries": [
+      "Australia",
+      "United States of America"
+    ],
+    "letterboxd_slug": "furiosa-a-mad-max-saga",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Longlegs",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1226578,
+    "description": "FBI Agent Lee Harker is a gifted new recruit assigned to the unsolved case of an elusive serial killer. As the case takes complex turns, unearthing evidence of the occult, Harker discovers a personal connection to the merciless killer and must race against time to stop him before he claims the lives of another innocent family.",
+    "runtime": 101,
+    "rating": 6.514,
+    "poster_path": "/1EwNyiiNFd863H4e8nWEzutnZD7.jpg",
+    "genres": [
+      "Crime",
+      "Horror",
+      "Mystery"
+    ],
+    "countries": [
+      "Canada",
+      "United States of America"
+    ],
+    "letterboxd_slug": "longlegs",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Challengers",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 937287,
+    "description": "Tennis player turned coach Tashi has taken her husband, Art, and transformed him into a world-famous Major champion. To jolt him out of his recent losing streak, she signs him up for a \"Challenger\" event — close to the lowest level of pro tournament — where he finds himself standing across the net from his former best friend and Tashi's former boyfriend.",
+    "runtime": 132,
+    "rating": 6.916,
+    "poster_path": "/H6vke7zGiuLsz4v4RPeReb9rsv.jpg",
+    "genres": [
+      "Drama",
+      "Romance"
+    ],
+    "countries": [
+      "Italy",
+      "United States of America"
+    ],
+    "letterboxd_slug": "challengers",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "We Live in Time",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1100099,
+    "description": "An up-and-coming chef and a recent divorcée find their lives forever changed when a chance encounter brings them together, in a decade-spanning, deeply moving romance.",
+    "runtime": 108,
+    "rating": 7.225,
+    "poster_path": "/oeDNBgnlGF6rnyX1P1K8Vl2f3lW.jpg",
+    "genres": [
+      "Romance",
+      "Drama"
+    ],
+    "countries": [
+      "United Kingdom"
+    ],
+    "letterboxd_slug": "we-live-in-time",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Moana 2",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 1241982,
+    "description": "After receiving an unexpected call from her wayfinding ancestors, Moana journeys alongside Maui and a new crew to the far seas of Oceania and into dangerous, long-lost waters for an adventure unlike anything she's ever faced.",
+    "runtime": 100,
+    "rating": 6.99,
+    "poster_path": "/aLVkiINlIeCkcZIzb7XHzPYgO6L.jpg",
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Comedy",
+      "Family",
+      "Fantasy"
+    ],
+    "countries": [
+      "Canada",
+      "United States of America"
+    ],
+    "letterboxd_slug": "moana-2",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Gladiator II",
+    "year": 2024,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 558449,
+    "description": "Years after witnessing the death of the revered hero Maximus at the hands of his uncle, Lucius is forced to enter the Colosseum after his home is conquered by the tyrannical Emperors who now lead Rome with an iron fist. With rage in his heart and the future of the Empire at stake, Lucius must look to his past to find strength and honor to return the glory of Rome to its people.",
+    "runtime": 148,
+    "rating": 6.6,
+    "poster_path": "/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "countries": [
+      "United States of America"
+    ],
+    "letterboxd_slug": "gladiator-ii",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "The French Dispatch of the Liberty, Kansas Evening Sun",
+    "year": 2021,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 542178,
+    "description": "The staff of an American magazine based in France puts out its last issue, with stories featuring an artist sentenced to life imprisonment, student riots, and a kidnapping resolved by a chef.",
+    "runtime": 108,
+    "rating": 7.009,
+    "poster_path": "/6JXR3KJH5roiBCjWFt09xfgxHZc.jpg",
+    "genres": [
+      "Drama",
+      "Comedy"
+    ],
+    "countries": [
+      "United States of America",
+      "Germany"
+    ],
+    "letterboxd_slug": "the-french-dispatch-of-the-liberty-kansas",
+    "is_in_watchlist": true
+  },
+  {
+    "title": "Perfect Blue",
+    "year": 1998,
+    "watched": false,
+    "recommendation_count": 0,
+    "tmdb_id": 10494,
+    "description": "Rising pop star Mima Kirigoe quits singing to pursue a career as an actress. After she takes up a role on a popular detective show, her handlers and collaborators begin turning up murdered. Harboring feelings of guilt and haunted by visions of her former self, Mima's reality and fantasy meld into a frenzied paranoia.",
+    "runtime": 81,
+    "rating": 8.304,
+    "poster_path": "/6WTiOCfDPP8XV4jqfloiVWf7KHq.jpg",
+    "genres": [
+      "Animation",
+      "Thriller"
+    ],
+    "countries": [
+      "Japan"
+    ],
+    "letterboxd_slug": "perfect-blue",
+    "is_in_watchlist": true
   }
 ]

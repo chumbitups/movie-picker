@@ -13,6 +13,8 @@ class Movie:
     poster_path: str | None = None
     genres: list[str] = field(default_factory=list)
     countries: list[str] = field(default_factory=list)
+    letterboxd_slug: str | None = None
+    is_in_watchlist: bool = True
 
 @dataclass
 class WatchlistItem:

@@ -1,6 +1,6 @@
 import pytest
-from models import Movie
-from storage import save_movies, load_movies
+from models import Movie, WatchlistItem
+from storage import save_movies, load_movies, save_watchlist_items, load_watchlist_items
 
 
 def test_save_and_load(tmp_path: str):
@@ -35,3 +35,22 @@ def test_save_state(tmp_path: str):
 def test_empty_file(tmp_path: str):
     loaded_movies = load_movies(tmp_path / "missing.json")
     assert loaded_movies == []
+
+def test_save_and_load_items(tmp_path: str):
+    items = [
+        WatchlistItem(
+            title="Adolescence",
+            year=2025,
+            slug="adolescence"
+        )
+    ]
+
+    path = tmp_path / "unmatched.json"
+
+    save_watchlist_items(items, path)
+    loaded = load_watchlist_items(path)
+
+    assert len(loaded) == 1
+    assert loaded[0].title == "Adolescence"
+    assert loaded[0].year == 2025
+    assert loaded[0].slug == "adolescence"
