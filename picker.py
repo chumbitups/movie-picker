@@ -1,5 +1,6 @@
-from models import Movie
+from models import Movie, MovieFilter
 import random
+
 
 def pick_random_movie(movies: list[Movie]) -> Movie | None:
     unwatched_movies = [movie for movie in movies if not movie.watched and movie.is_in_watchlist]
@@ -48,6 +49,56 @@ def print_movie_info(movie: Movie):
     if movie.description:
         print()
         print(movie.description)
+
+def filter_movies(
+    movies: list[Movie],
+    filters: MovieFilter,
+) -> list[Movie]:
+
+    result = []
+
+    for movie in movies:
+        if filters.genre is not None:
+            normalized_genres = [
+                genre.casefold()
+                for genre in movie.genres
+            ]   
+
+            if filters.genre.casefold() not in normalized_genres:
+                continue
+
+        if filters.year_from is not None:
+            if movie.year < filters.year_from:
+                continue
+
+        if filters.year_to is not None:
+            if movie.year > filters.year_to:
+                continue
+
+        if filters.country is not None:
+            normalized_countries = [
+                country.casefold()
+                for country in movie.countries
+            ]
+
+            if filters.country.casefold() not in normalized_countries:
+                continue
+
+        if filters.max_runtime is not None:
+            if movie.runtime is None:
+                continue
+            if movie.runtime > filters.max_runtime:
+                continue
+
+        if filters.min_rating is not None:
+            if movie.rating is None:
+                continue
+            if movie.rating < filters.min_rating:
+                continue
+
+        result.append(movie)
+
+    return result
 
 
     

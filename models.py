@@ -21,3 +21,12 @@ class WatchlistItem:
     title: str
     year: int
     slug: str
+
+@dataclass
+class MovieFilter:
+    genre: str | None = None
+    year_from: int | None = None
+    year_to: int | None = None
+    country: str | None = None
+    max_runtime: int | None = None
+    min_rating: float | None = None

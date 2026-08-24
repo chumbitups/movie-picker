@@ -1,11 +1,12 @@
 import pytest
-from models import Movie
+from models import Movie, MovieFilter
 from picker import (
     pick_random_movie, 
     calculate_movie_weight, 
     register_recommendation, 
     mark_movie_as_watched,
-    print_movie_info
+    print_movie_info,
+    filter_movies
 )
 movie1 = Movie("The Reader", 2008, watched=True)
 movie2 = Movie("Nosferatu", 2024)
@@ -152,3 +153,84 @@ def test_print_movie_info_skips_empty_fields(capsys):
     assert "Runtime:" not in output
     assert "Genres:" not in output
     assert "Countries:" not in output
+
+def test_filter_movie():
+    movies = [
+        Movie("Arrival", 2016, genres=["Drama", "Science Fiction"]), 
+        Movie("Perfect Blue", 1998, genres=["Animation", "Thriller"])
+    ]
+
+    filters = MovieFilter(genre="DRAMA")
+
+    dramas = filter_movies(movies, filters)
+
+    assert len(dramas) == 1
+    assert dramas[0].title == "Arrival"
+
+    filters = MovieFilter()
+
+    no_genre = filter_movies(movies, filters)
+
+    assert no_genre == movies
+
+def test_many_filters():
+    movies = [
+        Movie(
+            "Heat", 
+            1995, 
+            genres=["Drama", "Crime"], 
+            countries=["United States of America"], 
+            runtime=170
+        ),
+        Movie(
+            "Arrival", 
+            2016, 
+            genres=["Drama", "Science Fiction"], 
+            countries=["United States of America"], 
+            runtime=116
+        ),
+        Movie(
+            "Perfect Blue", 
+            1998, 
+            genres=["Animation", "Thriller"], 
+            countries=["Japan"], 
+            runtime=None
+        ),
+    ]
+
+    filters = MovieFilter(
+        genre="drama",
+        year_from=2000,
+        year_to=2020
+    )
+
+    filtered = filter_movies(movies, filters)
+
+    assert len(filtered) == 1
+    assert filtered[0].title == "Arrival"
+
+    filters = MovieFilter(year_from=2000)
+
+    assert len(filtered) == 1
+    assert filtered[0].title == "Arrival"
+
+    filters = MovieFilter(
+        country="united states of america",
+        max_runtime=120
+    )
+
+    assert len(filtered) == 1
+    assert filtered[0].title == "Arrival"
+
+    filters = MovieFilter(
+        genre="drama",
+        year_from=2000,
+        year_to=2020,
+        country="United States of America",
+        max_runtime=130,
+        min_rating=7.0
+    )
+
+    assert len(filtered) == 1
+    assert filtered[0].title == "Arrival"
+
