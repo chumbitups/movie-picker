@@ -22,6 +22,7 @@ from storage import (
 )
 from sync_service import sync_movies
 import os
+import httpx
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -168,15 +169,23 @@ if __name__ == "__main__":
 
     unmatched = load_watchlist_items("data/unmatched.json")
 
-    sync_movies(
-        username=username,
-        movies=movies,
-        unmatched=unmatched
-    )
+    try:
+        sync_movies(
+            username=username,
+            movies=movies,
+            unmatched=unmatched
+        )
 
-    save_movies(movies, "data/movies.json")
+    except httpx.HTTPError as error:
+        print(f"Could not sync watchlist: {error}")
+        print("Using local data.")
 
-    save_watchlist_items(unmatched, "data/unmatched.json")
+        movies = load_movies("data/movies.json")
+        unmatched = load_watchlist_items("data/unmatched.json")
+
+    else:
+        save_movies(movies, "data/movies.json")
+        save_watchlist_items(unmatched, "data/unmatched.json")
 
     run_app(movies)
     
