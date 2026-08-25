@@ -7,12 +7,6 @@ from picker import (
     print_movie_info,
     filter_movies
 )
-from tmdb_client import (
-    search_movie, 
-    find_movie_match, 
-    get_movie_details,
-    movie_from_tmdb
-)
 from letterboxd_client import fetch_watchlist_page, parse_watchlist_page
 from storage import (
     load_movies,
@@ -181,8 +175,7 @@ if __name__ == "__main__":
         print("Using local data.")
 
         movies = load_movies("data/movies.json")
-        unmatched = load_watchlist_items("data/unmatched.json")
-
+        
     else:
         save_movies(movies, "data/movies.json")
         save_watchlist_items(unmatched, "data/unmatched.json")

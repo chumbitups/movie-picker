@@ -66,16 +66,6 @@ def has_next_page(html: str) -> bool:
 
 
 
-if __name__ == "__main__":
-    items = fetch_watchlist("chumbitups")
-
-    print(len(items))
-    print(items[-3:])
-
-
-
-
-
 
 
 
