@@ -1,6 +1,10 @@
 pipeline {
     agent { label 'movie-picker' }
-
+	
+    environment {
+	TMDB_TOKEN = credentials('tmdb-token')
+    }  
+ 
     stages {
         stage('Checkout') {
             steps {
