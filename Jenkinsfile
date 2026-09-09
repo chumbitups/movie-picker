@@ -23,5 +23,11 @@ pipeline {
                 sh 'python -m pytest -v'
 	    }
         }
+        
+        stage('Deploy') {
+            steps {
+                sh 'ansible --version'
+            }
+        }
     }
 }
