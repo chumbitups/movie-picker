@@ -26,7 +26,24 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                sh 'ansible --version'
+                withCredentials([
+                    string(
+                        credentialsId: 'ansible-vault-password',
+                        variable: 'VAULT_PASSWORD'
+                    )
+                ]) {
+                    sh '''
+                        printf '%s' "$VAULT_PASSWORD" > .vault-pass
+                        chmod 600 .vault-pass
+
+                        ansible-playbook \
+                            -i ansible/inventory.ini \
+                            ansible/setup.yml \
+                            --vault-password-file .vault-pass
+
+                        rm -f .vault-pass
+                    '''
+                }
             }
         }
     }

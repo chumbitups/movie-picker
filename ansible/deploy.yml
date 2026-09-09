@@ -1,0 +1,30 @@
+- name: Deploy Movie Picker
+  hosts: local
+  
+  vars_files:
+    - secrets.yml
+
+  tasks:
+    - name: Create Movie Picker directory
+      ansible.builtin.file:
+        path: /home/chumbitups/movie-picker-deploy
+        state: directory
+    
+    - name: Clone Movie Picker repository
+      ansible.builtin.git:
+        repo: "https://github.com/chumbitups/movie-picker.git"
+        dest: /home/chumbitups/movie-picker-deploy
+        version: main
+    
+    - name: Start Movie Picker with Docker Compose
+      community.docker.docker_compose_v2:
+        project_src: /home/chumbitups/movie-picker-deploy
+        state: present
+    
+    - name: Create Movie Picker env file
+      ansible.builtin.copy:
+        dest: /home/chumbitups/movie-picker-deploy/.env
+        content: |
+          TMDB_TOKEN={{ tmdb_token }}
+          LETTERBOXD_USERNAME={{ letterboxd_username }}
+        mode: '0600'
